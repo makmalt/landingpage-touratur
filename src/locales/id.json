@@ -1,0 +1,13 @@
+{
+    "hero":{
+        "judul":"Selamat Datang Touratur",
+        "isi": "Kami akan memandu kalian ke manapun dunia berada",
+        "ctaText": "Hubungi Whatsapp"
+    },
+
+    "navbar":{
+        "home": "Beranda",
+        "about": "Tentang",
+        "contact": "Kontak"
+    }
+}

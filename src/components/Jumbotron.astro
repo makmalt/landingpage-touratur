@@ -1,0 +1,18 @@
+---
+const { content } = Astro.props
+---
+
+<section class="h-screen bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">{content.judul}</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">{content.isi}</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900">
+                {content.ctaText}
+                <svg class="w-5 h-5 ms-2 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.364 4.636a9 9 0 10-12.728 12.728A9 9 0 1016.364 4.636zm-1.414 11.314a7 7 0 11-9.9-9.9M12 8h1v4h-1zm0 6h1v2h-1z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+{
+    "hero":{
+        "judul":"Welcome Touratur",
+        "isi": "We will guide your tourguide",
+        "ctaText": "Chat Whatsapp"
+    },
+
+    "navbar":{
+        "home": "Home",
+        "about": "About",
+        "contact": "contact"
+    }
+}
