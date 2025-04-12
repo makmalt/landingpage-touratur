@@ -1,12 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Jumbotron from '../../components/Jumbotron.astro'
-import Carousel from '../../components/Carousel.astro'
-import Card from '../../components/Card.astro'
-import About from '../../components/About.astro'
+
 import id from "../../locales/id.json" 
 import HeroId from "../../section-id/HeroId.astro"
+import Navbar2 from '../../components/Navbar2.astro';
 import Navbar from '../../components/Navbar.astro';
+import Slider from '../../section-id/Slider.astro';
+import Carousel2 from '../../components/Carousel2.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -14,5 +14,9 @@ import Navbar from '../../components/Navbar.astro';
 
 <Layout>
 	<Navbar content={id.navbar}/>
-	<HeroId>
+	<HeroId/>
+	<Slider/>
+	<Slider/>
+	<Slider/>
+	<Slider/>
 </Layout>

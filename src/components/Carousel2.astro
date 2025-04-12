@@ -1,72 +1,51 @@
 <div
-  id="default-carousel"
-  class="relative md:w-3/5 h-full mx-auto mt-5 pt-24"
-  data-carousel="slide"
+  id="controls-carousel"
+  class="relative md:w-3/5 h-1/2 mx-auto my-8"
+  data-carousel="static"
 >
   <!-- Carousel wrapper -->
-  <div class="relative h-full overflow-hidden rounded-lg">
+  <div class="relative h-full overflow-hidden rounded-lg md:h-full">
     <!-- Item 1 -->
-    <div
-      class="relative hidden duration-700 ease-in-out h-full w-full"
-      data-carousel-item
-    >
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-        class="absolute top-0 left-0 w-full h-full object-cover"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />
     </div>
-
-    <!-- Item 2-5 -->
-    <div
-      class="relative hidden duration-700 ease-in-out h-full w-full"
-      data-carousel-item
-    >
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Felis_silvestris_catus_lying_on_rice_straw.jpg"
-        class="absolute top-0 left-0 w-full h-full object-cover"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />
     </div>
-    <div
-      class="relative hidden duration-700 ease-in-out h-full w-full"
-      data-carousel-item
-    >
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-        class="absolute top-0 left-0 w-full h-full object-cover"
+        src="/docs/images/carousel/carousel-3.svg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />
     </div>
-    <div
-      class="relative hidden duration-700 ease-in-out h-full w-full"
-      data-carousel-item
-    >
+    <!-- Item 4 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-        class="absolute top-0 left-0 w-full h-full object-cover"
+        src="/docs/images/carousel/carousel-4.svg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />
     </div>
-    <div
-      class="relative hidden duration-700 ease-in-out h-full w-full"
-      data-carousel-item
-    >
+    <!-- Item 5 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-        class="absolute top-0 left-0 w-full h-full object-cover"
+        src="/docs/images/carousel/carousel-5.svg"
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />
     </div>
   </div>
-
-  <!-- Indicators (biarin aja) -->
-  <div
-    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-  >
-    <!-- ... buttons ... -->
-  </div>
-
   <!-- Slider controls -->
   <button
     type="button"
@@ -79,6 +58,7 @@
       <svg
         class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
         aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 6 10"
       >
@@ -103,6 +83,7 @@
       <svg
         class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
         aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 6 10"
       >
