@@ -1,0 +1,72 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+  <div
+    class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer transition-all duration-300"
+    x-data="{ hover: false }"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+    :class="{ 'scale-105': hover }"
+  >
+    <img
+      src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+      alt=""
+      class="w-full h-64 object-cover transition-transform duration-300 ease-in-out"
+    />
+
+    <div
+      class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4"
+      x-show="hover"
+      x-transition
+    >
+      <h2 class="text-2xl font-bold mb-2">Judul Gambar 1</h2>
+      <p class="text-sm">
+        Ini deskripsi singkat gambar, bisa disesuaikan kontennya.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer transition-all duration-300"
+    x-data="{ hover: false }"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+    :class="{ 'scale-105': hover }"
+  >
+    <img
+      src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+      alt=""
+      class="w-full h-64 object-cover transition-transform duration-300 ease-in-out"
+    />
+
+    <div
+      class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4"
+      x-show="hover"
+      x-transition
+    >
+      <h2 class="text-2xl font-bold mb-2">Judul Gambar 2</h2>
+      <p class="text-sm">Deskripsi lainnya buat card kedua.</p>
+    </div>
+  </div>
+
+  <div
+    class="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer transition-all duration-300"
+    x-data="{ hover: false }"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+    :class="{ 'scale-105': hover }"
+  >
+    <img
+      src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+      alt=""
+      class="w-full h-64 object-cover transition-transform duration-300 ease-in-out"
+    />
+
+    <div
+      class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4"
+      x-show="hover"
+      x-transition
+    >
+      <h2 class="text-2xl font-bold mb-2">Judul Gambar 2</h2>
+      <p class="text-sm">Deskripsi lainnya buat card kedua.</p>
+    </div>
+  </div>
+</div>

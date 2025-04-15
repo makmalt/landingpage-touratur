@@ -1,0 +1,55 @@
+---
+import About from "../components/About.astro";
+import en from "../locales/en.json";
+---
+
+<div class="my-15">
+  <About content={en.trip} />
+
+  <ul
+    class="flex flex-wrap justify-center gap-20 sm:gap-10 md:gap-20 lg:gap-32 my-25"
+  >
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img src="oldman.png" alt="Old Man" class="w-20 h-20" />
+        <img
+          src="oldowoman.png"
+          alt="Old Woman"
+          class="w-20 h-20"
+        />
+      </div>
+
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-xl font-semibold text-[#6B451A]">Old</p>
+    </li>
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img src="man.png" alt="Man" class="w-20 h-20" />
+        <img
+          src="woman.png"
+          alt="Woman"
+          class="w-20 h-20"
+        />
+      </div>
+
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-xl font-semibold text-[#6B451A]">Teen</p>
+    </li>
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img src="boy.png" alt="boy" class="w-20 h-20" />
+        <img
+          src="girl.png"
+          alt="girl"
+          class="w-20 h-20"
+        />
+      </div>
+
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-xl font-semibold text-[#6B451A]">Children</p>
+    </li>
+  </ul>
+</div>

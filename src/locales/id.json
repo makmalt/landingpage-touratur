@@ -1,13 +1,72 @@
 {
-    "hero":{
-        "judul":"Selamat Datang Touratur",
-        "isi": "Kami akan memandu kalian ke manapun dunia berada",
-        "ctaText": "Hubungi Whatsapp"
+    "hero": [
+        {
+          "judul": "Selamat Datang di Touratur",
+          "isi": "Kami akan memandu kalian ke manapun dunia berada",
+          "ctaText": "Tour Sekarang",
+          "bg": "foto-hero/1.jpg"
+        },
+        {
+          "judul": "Temukan Petualangan Baru",
+          "isi": "Liburan seru bersama Touratur!",
+          "ctaText": "Tour Sekarang",
+          "bg": "foto-hero/2.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/3.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/4.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/5.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/6.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/7.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/8.jpg"
+        },
+        {
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/9.jpg"
+        }
+      ],
+
+    "navbar": {
+        "home": "Beranda",
+        "trip": "Trip",
+        "galeri": "Galeri",
+        "flag": "id",
+        "bahasa": "Indonesia (Id)"
     },
 
-    "navbar":{
-        "home": "Beranda",
-        "about": "Tentang",
-        "contact": "Kontak"
+    "trip":{
+        "judul": "Siapa saja yang bisa ikut trip ini?",
+        "orangtua": "Orangtua",
+        "muda": "Muda",
+        "anak": "Anak-anak"
+    },
+    "testimoni":{
+        "judul": "Apa yang mereka katakan"
+    },
+    "keunggulan":{
+        "judul": "Keunggulan Touratur"
+    },
+    "isitestimoni":{
+        "isi1":"Suasana menjadi hangat di tengah dinginnya Sapa. Bisa dibilang, trip ini sangat sempurna dan merupakan trip terbaik saya sejauh ini.",
+        "isi2" : "Pengemasan yang seusai dengan kriteria dan selera kita. Itinerary yang nyaman dan kuliner yang sangat memuaskan."
+    },
+    "tripfav":{
+        "judul":"Trip Andalan"
     }
 }

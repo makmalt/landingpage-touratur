@@ -1,0 +1,60 @@
+---
+import About from "../components/About.astro";
+import id from "../locales/id.json";
+---
+
+<div class="my-15">
+  <About content={id.keunggulan} />
+
+  <ul
+    class="flex flex-wrap justify-center gap-20 sm:gap-10 md:gap-20 lg:gap-32 my-25"
+  >
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img
+          src="unggul/seniorfriendly.png"
+          alt="senior friendly"
+          class="w-25 h-25"
+        />
+      </div>
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-lg font-semibold text-[#6B451A]">
+        Ramah Usia
+      </p>
+    </li>
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img src="unggul/personalized.png" alt="personalized" class="w-25 h-25" />
+      </div>
+
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-lg font-semibold text-[#6B451A]">
+        Personalisasi
+      </p>
+    </li>
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img src="unggul/sustainable.png" alt="sustainable" class="w-25 h-25" />
+      </div>
+
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-lg font-semibold text-[#6B451A]">
+        Berkelanjutan
+      </p>
+    </li>
+    <li class="flex flex-col items-center">
+      <!-- Gambar menyamping -->
+      <div class="flex gap-2 justify-center">
+        <img src="unggul/adventurousss.png" alt="sustainable" class="w-25 h-25" />
+      </div>
+
+      <!-- Teks di bawah gambar -->
+      <p class="mt-2 text-center text-lg font-semibold text-[#6B451A]">
+        Jelajah Seru
+      </p>
+    </li>
+  </ul>
+</div>

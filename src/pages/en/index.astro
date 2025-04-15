@@ -1,18 +1,32 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Jumbotron from '../../components/Jumbotron.astro'
-import Carousel from '../../components/Carousel.astro'
-import Card from '../../components/Card.astro'
-import About from '../../components/About.astro'
-import en from '../../locales/en.json'
-import Hero from '../../section-en/Hero.astro';
-import Navbar from '../../components/Navbar.astro';
+import Layout from "../../layouts/Layout.astro";
+import en from "../../locales/en.json";
+import HeroEn from "../../section-en/HeroEn.astro";
+import Navbar from "../../components/Navbar.astro";
+import Slider from "../../section-id/Slider.astro";
+import FloatingCTA from "../../components/FloatingCTA.astro";
+import HeaderTrip from "../../section-en/HeaderTrip.astro";
+import HeaderTestimoni from "../../section-en/HeaderTestimoni.astro";
+import SliderTestimoni from "../../section-en/SliderTestimoni.astro";
+import Galeri2 from "../../section-id/Galeri2.astro";
+import HeaderUnggul from "../../section-en/HeaderUnggul.astro";
+import Footer from "../../components/Footer.astro";
+import Galeri from "../../components/Galeri.astro";
+import Grid from "../../components/Grid.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Navbar content={en.navbar}/> 
-	<Hero>
+  <Navbar content={en.navbar} />
+  <FloatingCTA />
+  <section id="home"><HeroEn /></section>
+  <HeaderUnggul />
+  <Grid />
+  <HeaderTrip />
+  <HeaderTestimoni />
+  <SliderTestimoni />
+  <section id="galeri"><Galeri /></section>
+  <section id="footer"><Footer /></section>
 </Layout>
