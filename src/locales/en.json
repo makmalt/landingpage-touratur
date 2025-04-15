@@ -1,15 +1,11 @@
 {
     "hero": [
         {
-          "judul": "Selamat Datang di Touratur",
-          "isi": "Kami akan memandu kalian ke manapun dunia berada",
-          "ctaText": "Tour Sekarang",
+          "ctaText": "Tour Now",
           "bg": "foto-hero/1.jpg"
         },
         {
-          "judul": "Temukan Petualangan Baru",
-          "isi": "Liburan seru bersama Touratur!",
-          "ctaText": "Tour Sekarang",
+          "ctaText": "Tour Now",
           "bg": "foto-hero/2.jpg"
         },
         {

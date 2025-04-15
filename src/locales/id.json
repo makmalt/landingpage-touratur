@@ -1,44 +1,42 @@
 {
     "hero": [
         {
-          "judul": "Selamat Datang di Touratur",
-          "isi": "Kami akan memandu kalian ke manapun dunia berada",
           "ctaText": "Tour Sekarang",
-          "bg": "foto-hero/1.jpg"
+          "bg": "foto-hero/1.webp"
         },
         {
           "judul": "Temukan Petualangan Baru",
           "isi": "Liburan seru bersama Touratur!",
           "ctaText": "Tour Sekarang",
-          "bg": "foto-hero/2.jpg"
+          "bg": "foto-hero/2.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/3.jpg"
+            "bg": "foto-hero/3.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/4.jpg"
+            "bg": "foto-hero/4.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/5.jpg"
+            "bg": "foto-hero/5.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/6.jpg"
+            "bg": "foto-hero/6.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/7.jpg"
+            "bg": "foto-hero/7.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/8.jpg"
+            "bg": "foto-hero/8.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/9.jpg"
+            "bg": "foto-hero/9.webp"
         }
       ],
 
