@@ -1,4 +1,4 @@
-<div x-data="{ open: false, imgSrc: '' }"  x-init="open = false" x-cloak>
+<div x-data="{ open: false, imgSrc: '' }" x-cloak>
   <!-- Modal -->
   <div
     x-show="open"
@@ -11,6 +11,7 @@
     @click.away="open = false"
     class="fixed inset-0 bg-white/40 backdrop-blur-sm flex items-center justify-center z-50"
     x-cloak
+    style="display: none"
   >
     <div class="relative">
       <!-- Close Button -->
