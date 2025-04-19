@@ -45,28 +45,30 @@
     >
       <div id="gallery" class="flex space-x-3 pb-2">
         <!-- Gallery Item 1 -->
-        <div
-          class="flex-none ml-1 max-w-screen md:w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
-          x-data="{ hover: false }"
-          @mouseenter="hover = true"
-          @mouseleave="hover = false"
-        >
-          <img
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-            alt="Gallery image 1"
-            class="w-full h-105 object-cover"
-          />
+        <a href="https://www.instagram.com">
           <div
-            class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
-            x-show="hover"
-            x-transition
+            class="flex-none ml-1 max-w-screen md:w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
+            x-data="{ hover: false }"
+            @mouseenter="hover = true"
+            @mouseleave="hover = false"
           >
-            <h2 class="text-2xl font-bold mb-2">Judul Gambar 1</h2>
-            <p class="text-sm">
-              Ini deskripsi singkat gambar, bisa disesuaikan kontennya.
-            </p>
-          </div>
-        </div>
+            <img
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+              alt="Gallery image 1"
+              class="w-full h-105 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
+              x-show="hover"
+              x-transition
+            >
+              <h2 class="text-2xl font-bold mb-2">Judul Gambar 1</h2>
+              <p class="text-sm">
+                Ini deskripsi singkat gambar, bisa disesuaikan kontennya.
+              </p>
+            </div>
+          </div></a
+        >
 
         <!-- Gallery Item 2 -->
         <div

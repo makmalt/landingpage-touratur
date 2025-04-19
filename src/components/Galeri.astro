@@ -42,19 +42,22 @@
   <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-4 mt-6">
     <template
       x-for="src in [
-        'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
-        'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
-        'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
-        'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
-        'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg'
+        'galeri/gatau.webp',
+        'galeri/gatau2.webp',
+        'galeri/KampungNaga1.webp',
+        'galeri/LabuanBajo.webp',
+        'galeri/BandaNeira.webp',
+        'galeri/lombok3.webp',
+        'galeri/rote1.webp',
+        'galeri/sumba2.webp',
       ]"
       :key="src"
     >
-      <div>
+      <div class="aspect-square">
         <img
           :src="src"
           @click="imgSrc = src; open = true"
-          class="cursor-pointer h-auto max-w-full rounded-lg hover:scale-105 transition-transform"
+          class="cursor-pointer w-full h-full object-cover rounded-lg hover:scale-105 transition-transform"
         />
       </div>
     </template>

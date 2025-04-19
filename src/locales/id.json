@@ -1,45 +1,64 @@
 {
     "hero": [
         {
-          "ctaText": "Tour Sekarang",
-          "bg": "foto-hero/1.webp"
+            "judul": "PULAU BELITUNG",
+            "isi": "Bangka Belitung",
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/1.webp"
         },
         {
-          "judul": "Temukan Petualangan Baru",
-          "isi": "Liburan seru bersama Touratur!",
-          "ctaText": "Tour Sekarang",
-          "bg": "foto-hero/2.webp"
+            "judul": "CIKOLE",
+            "isi": "Lembang",
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/2.webp"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/3.webp"
+            "bg": "foto-hero/3.webp",
+            "judul": "UBUD",
+            "isi": "Bali"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/4.webp"
+            "bg": "foto-hero/4.webp",
+            "judul": "LUWUK BANGGAI",
+            "isi": "Sulawesi Tengah"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/5.webp"
+            "bg": "foto-hero/5.webp",
+            "judul": "HANOI",
+            "isi": "Vietnam"
         },
         {
             "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/6.webp"
+            "bg": "foto-hero/6.webp",
+            "judul": "PULAU BELITUNG",
+            "isi": "Bangka Belitung"
         },
         {
             "ctaText": "Tour Sekarang",
             "bg": "foto-hero/7.webp"
         },
         {
+            "judul": "LOMBOK",
+            "isi": "Nusa Tenggara Barat",
             "ctaText": "Tour Sekarang",
             "bg": "foto-hero/8.webp"
         },
         {
+            "judul": "BROMO",
+            "isi": "Jawa Timur",
             "ctaText": "Tour Sekarang",
             "bg": "foto-hero/9.webp"
+        },
+        {
+            "judul": "LEUWI JURIG",
+            "isi": "Garut",
+            "ctaText": "Tour Sekarang",
+            "bg": "foto-hero/10.webp"
         }
-      ],
-
+    ],
     "navbar": {
         "home": "Beranda",
         "trip": "Trip",
@@ -47,24 +66,23 @@
         "flag": "id",
         "bahasa": "Indonesia (Id)"
     },
-
-    "trip":{
+    "trip": {
         "judul": "Siapa saja yang bisa ikut trip ini?",
         "orangtua": "Orangtua",
         "muda": "Muda",
         "anak": "Anak-anak"
     },
-    "testimoni":{
+    "testimoni": {
         "judul": "Apa yang mereka katakan"
     },
-    "keunggulan":{
+    "keunggulan": {
         "judul": "Keunggulan Touratur"
     },
-    "isitestimoni":{
-        "isi1":"Suasana menjadi hangat di tengah dinginnya Sapa. Bisa dibilang, trip ini sangat sempurna dan merupakan trip terbaik saya sejauh ini.",
-        "isi2" : "Pengemasan yang seusai dengan kriteria dan selera kita. Itinerary yang nyaman dan kuliner yang sangat memuaskan."
+    "isitestimoni": {
+        "isi1": "Suasana menjadi hangat di tengah dinginnya Sapa. Bisa dibilang, trip ini sangat sempurna dan merupakan trip terbaik saya sejauh ini.",
+        "isi2": "Pengemasan yang seusai dengan kriteria dan selera kita. Itinerary yang nyaman dan kuliner yang sangat memuaskan."
     },
-    "tripfav":{
-        "judul":"Trip Andalan"
+    "tripfav": {
+        "judul": "Trip Andalan"
     }
 }

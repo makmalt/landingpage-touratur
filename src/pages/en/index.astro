@@ -3,7 +3,6 @@ import Layout from "../../layouts/Layout.astro";
 import en from "../../locales/en.json";
 import HeroEn from "../../section-en/HeroEn.astro";
 import Navbar from "../../components/Navbar.astro";
-import Slider from "../../section-id/Slider.astro";
 import FloatingCTA from "../../components/FloatingCTA.astro";
 import HeaderTrip from "../../section-en/HeaderTrip.astro";
 import HeaderTestimoni from "../../section-en/HeaderTestimoni.astro";
@@ -23,10 +22,11 @@ import Grid from "../../components/Grid.astro";
   <FloatingCTA />
   <section id="home"><HeroEn /></section>
   <HeaderUnggul />
+  <section id="trip" class="pt-25"></section>
   <Grid />
   <HeaderTrip />
   <HeaderTestimoni />
   <SliderTestimoni />
-  <section id="galeri"><Galeri /></section>
+  <section id="galeri" class="pt-25"><Galeri /></section>
   <section id="footer"><Footer /></section>
 </Layout>

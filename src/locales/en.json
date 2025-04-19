@@ -1,43 +1,64 @@
 {
     "hero": [
         {
-          "ctaText": "Tour Now",
-          "bg": "foto-hero/1.webp"
+            "judul": "PULAU BELITUNG",
+            "isi": "Bangka Belitung",
+            "ctaText": "Tour Now",
+            "bg": "foto-hero/1.webp"
         },
         {
-          "ctaText": "Tour Now",
-          "bg": "foto-hero/2.webp"
+            "judul": "CIKOLE",
+            "isi": "Lembang",
+            "ctaText": "Tour Now",
+            "bg": "foto-hero/2.webp"
         },
         {
             "ctaText": "Tour Now",
-            "bg": "foto-hero/3.webp"
+            "bg": "foto-hero/3.webp",
+            "judul": "UBUD",
+            "isi": "Bali"
         },
         {
             "ctaText": "Tour Now",
-            "bg": "foto-hero/4.webp"
+            "bg": "foto-hero/4.webp",
+            "judul": "LUWUK BANGGAI",
+            "isi": "Sulawesi Tengah"
         },
         {
             "ctaText": "Tour Now",
-            "bg": "foto-hero/5.webp"
+            "bg": "foto-hero/5.webp",
+            "judul": "HANOI",
+            "isi": "Vietnam"
         },
         {
             "ctaText": "Tour Now",
-            "bg": "foto-hero/6.webp"
+            "bg": "foto-hero/6.webp",
+            "judul": "PULAU BELITUNG",
+            "isi": "Bangka Belitung"
         },
         {
             "ctaText": "Tour Now",
             "bg": "foto-hero/7.webp"
         },
         {
+            "judul": "LOMBOK",
+            "isi": "Nusa Tenggara Barat",
             "ctaText": "Tour Now",
             "bg": "foto-hero/8.webp"
         },
         {
+            "judul": "BROMO",
+            "isi": "Jawa Timur",
             "ctaText": "Tour Now",
             "bg": "foto-hero/9.webp"
+        },
+        {
+            "judul": "LEUWI JURIG",
+            "isi": "Garut",
+            "ctaText": "Tour Now",
+            "bg": "foto-hero/10.webp"
         }
-      ],
-
+    ],
     "navbar": {
         "home": "Home",
         "trip": "Trip",
@@ -45,21 +66,20 @@
         "flag": "en",
         "bahasa": "English (En)"
     },
-
-    "trip":{
+    "trip": {
         "judul": "Who can join this trip?",
         "orangtua": "Orangtua",
         "muda": "Teen",
         "anak": "Children"
     },
-    "testimoni":{
+    "testimoni": {
         "judul": "What they say"
     },
-    "keunggulan":{
+    "keunggulan": {
         "judul": "Touratur Adventages"
     },
-    "isitestimoni":{
-        "isi1":"The atmosphere was warm in the middle of cold Sapa. All in all, it was a perfect trip and my best trip so far.",
-        "isi2" : "Packaging that suits our criteria and tastes. Convenient itinerary and very satisfying cuisine."
+    "isitestimoni": {
+        "isi1": "The atmosphere was warm in the middle of cold Sapa. All in all, it was a perfect trip and my best trip so far.",
+        "isi2": "Packaging that suits our criteria and tastes. Convenient itinerary and very satisfying cuisine."
     }
 }
