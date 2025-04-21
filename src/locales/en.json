@@ -80,6 +80,24 @@
     },
     "isitestimoni": {
         "isi1": "The atmosphere was warm in the middle of cold Sapa. All in all, it was a perfect trip and my best trip so far.",
-        "isi2": "Packaging that suits our criteria and tastes. Convenient itinerary and very satisfying cuisine."
+        "isi2": "Packaging that suits our criteria and tastes. Convenient itinerary and very satisfying cuisine.",
+        "isi3": "Very supportive and accompanying participants so they feel safe, secure, and comfortable during the trip"
+    },
+    "tripfav": {
+        "judul": "Favorite Trip"
+    },
+    "listtrip": {
+        "list1": "Trip to Labuan Bajo",
+        "deskripsi1": "Explore the beauty of Labuan Bajo, East Nusa Tenggara",
+        "list2": "Trip to Bromo",
+        "deskripsi2": "Breathe the fresh air in Bromo, East Java",
+        "list3": "Trip to Lembang",
+        "deskripsi3": "Trip to Lembang",
+        "list4": "Trip to Garut",
+        "deskripsi4": "Trip to Garut",
+        "list5": "Trip to Bangka Belitung",
+        "deskripsi5": "Trip to Bangka Belitung",
+        "list6": "Trip to Jawa Timur",
+        "deskripsi6": "Trip to Jawa Timur"
     }
 }

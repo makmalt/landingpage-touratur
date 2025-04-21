@@ -1,3 +1,7 @@
+---
+const { content } = Astro.props;
+---
+
 <div class="relative max-w-screen md:mx-10">
   <button
     id="prev"
@@ -53,44 +57,52 @@
             @mouseleave="hover = false"
           >
             <img
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+              src="trip/LabuanBajo.webp"
               alt="Gallery image 1"
-              class="w-full h-105 object-cover"
+              class="w-full h-105 object-cover object-[center_20%]"
             />
             <div
               class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
               x-show="hover"
               x-transition
             >
-              <h2 class="text-2xl font-bold mb-2">Judul Gambar 1</h2>
+              <h2 class="text-2xl font-bold mb-2">{content.list1}</h2>
               <p class="text-sm">
-                Ini deskripsi singkat gambar, bisa disesuaikan kontennya.
+                {content.deskripsi1}
               </p>
             </div>
           </div></a
         >
 
         <!-- Gallery Item 2 -->
-        <div
-          class="flex-none w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
-          x-data="{ hover: false }"
-          @mouseenter="hover = true"
-          @mouseleave="hover = false"
+        <a
+          href="https://youtu.be/kTp_RNLU8Dg"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <img
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-            alt="Gallery image 2"
-            class="w-full h-105 object-cover"
-          />
           <div
-            class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
-            x-show="hover"
-            x-transition
+            class="flex-none w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
+            x-data="{ hover: false }"
+            @mouseenter="hover = true"
+            @mouseleave="hover = false"
           >
-            <h2 class="text-2xl font-bold mb-2">Judul Gambar 2</h2>
-            <p class="text-sm">Deskripsi lainnya buat card kedua.</p>
-          </div>
-        </div>
+            <img
+              src="foto-hero/9.webp"
+              alt="Gallery image 2"
+              class="w-full h-105 object-cover object-[center_20%]"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
+              x-show="hover"
+              x-transition
+            >
+              <h2 class="text-2xl font-bold mb-2">{content.list2}</h2>
+              <p class="text-sm">
+                {content.deskripsi2}
+              </p>
+            </div>
+          </div></a
+        >
 
         <!-- Gallery Item 3 -->
         <div
@@ -109,8 +121,10 @@
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">Judul Gambar 3</h2>
-            <p class="text-sm">Deskripsi untuk card ketiga dalam galeri ini.</p>
+            <h2 class="text-2xl font-bold mb-2">{content.list3}</h2>
+            <p class="text-sm">
+              {content.deskripsi3}
+            </p>
           </div>
         </div>
 
@@ -131,8 +145,10 @@
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">Judul Gambar 4</h2>
-            <p class="text-sm">Deskripsi singkat untuk gambar keempat.</p>
+            <h2 class="text-2xl font-bold mb-2">{content.list4}</h2>
+            <p class="text-sm">
+              {content.deskripsi4}
+            </p>
           </div>
         </div>
 
@@ -153,8 +169,10 @@
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">Judul Gambar 5</h2>
-            <p class="text-sm">Deskripsi lainnya untuk card kelima.</p>
+            <h2 class="text-2xl font-bold mb-2">{content.list5}</h2>
+            <p class="text-sm">
+              {content.deskripsi5}
+            </p>
           </div>
         </div>
       </div>

@@ -80,9 +80,24 @@
     },
     "isitestimoni": {
         "isi1": "Suasana menjadi hangat di tengah dinginnya Sapa. Bisa dibilang, trip ini sangat sempurna dan merupakan trip terbaik saya sejauh ini.",
-        "isi2": "Pengemasan yang seusai dengan kriteria dan selera kita. Itinerary yang nyaman dan kuliner yang sangat memuaskan."
+        "isi2": "Pengemasan yang seusai dengan kriteria dan selera kita. Itinerary yang nyaman dan kuliner yang sangat memuaskan.",
+        "isi3": "Sangat mengaping dan mendampingi peserta-peserta sepuh sehingga mereka merasa tenang, aman, dan nyaman selama perjalanan"
     },
     "tripfav": {
         "judul": "Trip Andalan"
+    },
+    "listtrip": {
+        "list1": "Trip ke Labuan Bajo",
+        "deskripsi1": "Jelajahi keindahan alam di Labuan Bajo, Nusa Tenggara Timur",
+        "list2": "Trip ke Bromo",
+        "deskripsi2": "Hirup udara segar di Bromo, Jawa Timur",
+        "list3": "Trip ke Lembang",
+        "deskripsi3": "Trip ke Lembang",
+        "list4": "Trip ke Garut",
+        "deskripsi4": "Trip ke Garut",
+        "list5": "Trip ke Bangka Belitung",
+        "deskripsi5": "Trip ke Bangka Belitung",
+        "list6": "Trip ke Jawa Timur",
+        "deskripsi6": "Trip ke Jawa Timur"
     }
 }
