@@ -11,6 +11,7 @@ import HeaderUnggul from "../../section-id/HeaderUnggul.astro";
 import Footer from "../../components/Footer.astro";
 import Galeri from "../../components/Galeri.astro";
 import Grid from "../../components/Grid.astro";
+import About from "../../components/About.astro";
 ---
 
 <Layout>
@@ -18,11 +19,12 @@ import Grid from "../../components/Grid.astro";
   <FloatingCTA />
   <section id="home"><HeroId /></section>
   <HeaderUnggul />
-  <section id="trip" class="pt-25"></section>
+  <section id="trip" class="pt-10"></section>
+  <About content={id.tripfav} />
   <section><Grid content={id.listtrip} /></section>
   <HeaderTrip />
   <HeaderTestimoni />
   <SliderTestimoni />
   <section id="galeri"><Galeri /></section>
-  <section id="footer"><Footer /></section>
+  <section id="footer"><Footer content={id.footer} /></section>
 </Layout>

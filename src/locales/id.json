@@ -1,62 +1,52 @@
 {
     "hero": [
         {
-            "judul": "PULAU BELITUNG",
+            "subjudul": "Let's Explore",
+            "judul": "BELITUNG",
             "isi": "Bangka Belitung",
-            "ctaText": "Tour Sekarang",
+            "ctaText": "Sekarang",
             "bg": "foto-hero/1.webp"
         },
         {
-            "judul": "CIKOLE",
-            "isi": "Lembang",
-            "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/2.webp"
-        },
-        {
-            "ctaText": "Tour Sekarang",
+            "subjudul": "Let's Explore",
+            "ctaText": "Sekarang",
             "bg": "foto-hero/3.webp",
             "judul": "UBUD",
             "isi": "Bali"
         },
         {
-            "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/4.webp",
-            "judul": "LUWUK BANGGAI",
-            "isi": "Sulawesi Tengah"
-        },
-        {
-            "ctaText": "Tour Sekarang",
+            "subjudul": "Reunion in",
+            "ctaText": "Sekarang",
             "bg": "foto-hero/5.webp",
             "judul": "HANOI",
             "isi": "Vietnam"
         },
         {
-            "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/6.webp",
-            "judul": "PULAU BELITUNG",
-            "isi": "Bangka Belitung"
+            "subjudul": "Trekking in",
+            "judul": "TASIKMALAYA",
+            "ctaText": "Sekarang",
+            "bg": "foto-hero/11.webp"
         },
         {
-            "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/7.webp"
-        },
-        {
+            "subjudul": "Gathering In",
             "judul": "LOMBOK",
             "isi": "Nusa Tenggara Barat",
-            "ctaText": "Tour Sekarang",
+            "ctaText": "Sekarang",
             "bg": "foto-hero/8.webp"
         },
         {
-            "judul": "BROMO",
-            "isi": "Jawa Timur",
-            "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/9.webp"
+            "subjudul": "Discover",
+            "judul": "NORTH SUMATRA",
+            "isi": "Garut",
+            "ctaText": "Sekarang",
+            "bg": "foto-hero/10.webp"
         },
         {
-            "judul": "LEUWI JURIG",
-            "isi": "Garut",
-            "ctaText": "Tour Sekarang",
-            "bg": "foto-hero/10.webp"
+            "subjudul": "Discover",
+            "judul": "BROMO",
+            "isi": "Jawa Timur",
+            "ctaText": "Sekarang",
+            "bg": "foto-hero/9.webp"
         }
     ],
     "navbar": {
@@ -73,10 +63,10 @@
         "anak": "Anak-anak"
     },
     "testimoni": {
-        "judul": "Apa yang mereka katakan"
+        "judul": "Apa yang mereka katakan tentang trip mereka"
     },
     "keunggulan": {
-        "judul": "Keunggulan Touratur"
+        "judul": "Mengapa Kami?"
     },
     "isitestimoni": {
         "isi1": "Suasana menjadi hangat di tengah dinginnya Sapa. Bisa dibilang, trip ini sangat sempurna dan merupakan trip terbaik saya sejauh ini.",
@@ -91,13 +81,17 @@
         "deskripsi1": "Jelajahi keindahan alam di Labuan Bajo, Nusa Tenggara Timur",
         "list2": "Trip ke Bromo",
         "deskripsi2": "Hirup udara segar di Bromo, Jawa Timur",
-        "list3": "Trip ke Lembang",
-        "deskripsi3": "Trip ke Lembang",
+        "list3": "Trip ke Pangandaran",
+        "deskripsi3": "Nikmati keindahan alam di Pangandaran, Jawa Barat",
         "list4": "Trip ke Garut",
         "deskripsi4": "Trip ke Garut",
         "list5": "Trip ke Bangka Belitung",
         "deskripsi5": "Trip ke Bangka Belitung",
         "list6": "Trip ke Jawa Timur",
-        "deskripsi6": "Trip ke Jawa Timur"
+        "deskripsi6": "Trip ke Jawa Timur",
+        "cta": "Lihat"
+    },
+    "footer": {
+        "social": "Temukan kami di media sosial"
     }
 }

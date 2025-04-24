@@ -49,60 +49,66 @@ const { content } = Astro.props;
     >
       <div id="gallery" class="flex space-x-3 pb-2">
         <!-- Gallery Item 1 -->
-        <a href="https://www.instagram.com">
-          <div
-            class="flex-none ml-1 max-w-screen md:w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
-            x-data="{ hover: false }"
-            @mouseenter="hover = true"
-            @mouseleave="hover = false"
-          >
-            <img
-              src="trip/LabuanBajo.webp"
-              alt="Gallery image 1"
-              class="w-full h-105 object-cover object-[center_20%]"
-            />
-            <div
-              class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
-              x-show="hover"
-              x-transition
-            >
-              <h2 class="text-2xl font-bold mb-2">{content.list1}</h2>
-              <p class="text-sm">
-                {content.deskripsi1}
-              </p>
-            </div>
-          </div></a
+        <div
+          class="flex-none ml-1 max-w-screen md:w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
+          x-data="{ hover: false }"
+          @mouseenter="hover = true"
+          @mouseleave="hover = false"
         >
+          <img
+            src="trip/LabuanBajo.webp"
+            alt="Gallery image 1"
+            class="w-full h-105 object-cover object-[center_20%]"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
+            x-show="hover"
+            x-transition
+          >
+            <h2 class="text-2xl font-bold mb-2">{content.list1}</h2>
+            <p class="text-sm">
+              {content.deskripsi1}
+            </p>
+            <br />
+            <a
+              href="https://youtu.be/kTp_RNLU8Dg"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="preview-link font-semibold text-xl">{content.cta}</a
+            >
+          </div>
+        </div>
 
         <!-- Gallery Item 2 -->
-        <a
-          href="https://youtu.be/kTp_RNLU8Dg"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          class="flex-none w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
+          x-data="{ hover: false }"
+          @mouseenter="hover = true"
+          @mouseleave="hover = false"
         >
+          <img
+            src="foto-hero/9.webp"
+            alt="Gallery image 2"
+            class="w-full h-105 object-cover object-[center_20%]"
+          />
           <div
-            class="flex-none w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
-            x-data="{ hover: false }"
-            @mouseenter="hover = true"
-            @mouseleave="hover = false"
+            class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
+            x-show="hover"
+            x-transition
           >
-            <img
-              src="foto-hero/9.webp"
-              alt="Gallery image 2"
-              class="w-full h-105 object-cover object-[center_20%]"
-            />
-            <div
-              class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
-              x-show="hover"
-              x-transition
+            <h2 class="text-2xl font-bold mb-2">{content.list2}</h2>
+            <p class="text-sm">
+              {content.deskripsi2}
+            </p>
+            <br />
+            <a
+              href="https://youtu.be/kTp_RNLU8Dg"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="preview-link font-semibold text-xl">{content.cta}</a
             >
-              <h2 class="text-2xl font-bold mb-2">{content.list2}</h2>
-              <p class="text-sm">
-                {content.deskripsi2}
-              </p>
-            </div>
-          </div></a
-        >
+          </div>
+        </div>
 
         <!-- Gallery Item 3 -->
         <div
@@ -112,9 +118,9 @@ const { content } = Astro.props;
           @mouseleave="hover = false"
         >
           <img
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+            src="trip/Pangandaran.webp"
             alt="Gallery image 3"
-            class="w-full h-105 object-cover"
+            class="w-full h-105 object-cover object-bottom"
           />
           <div
             class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
@@ -125,6 +131,13 @@ const { content } = Astro.props;
             <p class="text-sm">
               {content.deskripsi3}
             </p>
+            <br />
+            <a
+              href="https://youtu.be/DAXtyF7vlpA?si=k_fq9EN7CtdE8E5c"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="preview-link font-semibold text-xl">{content.cta}</a
+            >
           </div>
         </div>
 
@@ -189,6 +202,45 @@ const { content } = Astro.props;
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  /* Add smooth transition for navigation buttons */
+  #prev,
+  #next {
+    transition:
+      opacity 0.3s ease,
+      background-color 0.2s ease;
+  }
+
+  .pointer-events-none {
+    pointer-events: none;
+  }
+
+  /* Style for the Preview text link */
+  .preview-link {
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    display: inline-block;
+  }
+
+  /* Underline effect on hover */
+  .preview-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .preview-link:hover::after {
+    width: 100%;
+  }
 </style>
 
 <script>
@@ -199,7 +251,31 @@ const { content } = Astro.props;
     const nextBtn = document.getElementById("next");
 
     // Scroll amount (width of one item + gap)
-    const scrollAmount = 417 + 12; // 384px width (w-[417px]) + 24px gap (space-x-6)
+    const scrollAmount = 417 + 12; // 417px width + 12px gap (space-x-3)
+
+    // Initially check if buttons should be visible
+    checkButtonVisibility();
+
+    // Function to check and update button visibility
+    function checkButtonVisibility() {
+      // Hide prev button if at the start
+      if (wrapper?.scrollLeft <= 10) {
+        prevBtn?.classList.add("opacity-0", "pointer-events-none");
+      } else {
+        prevBtn?.classList.remove("opacity-0", "pointer-events-none");
+      }
+
+      // Hide next button if at the end
+      const maxScrollLeft = wrapper?.scrollWidth - wrapper?.clientWidth - 10;
+      if (wrapper?.scrollLeft >= maxScrollLeft) {
+        nextBtn?.classList.add("opacity-0", "pointer-events-none");
+      } else {
+        nextBtn?.classList.remove("opacity-0", "pointer-events-none");
+      }
+    }
+
+    // Listen for scroll events to update button visibility
+    wrapper?.addEventListener("scroll", checkButtonVisibility);
 
     // Event listeners for navigation buttons
     nextBtn?.addEventListener("click", function () {
@@ -209,6 +285,9 @@ const { content } = Astro.props;
     prevBtn?.addEventListener("click", function () {
       wrapper?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
+
+    // Optional: Window resize event to recheck button visibility
+    window.addEventListener("resize", checkButtonVisibility);
 
     // Optional: Keyboard navigation support
     document.addEventListener("keydown", function (e) {
