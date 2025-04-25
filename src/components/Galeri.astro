@@ -43,7 +43,7 @@
   <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-4 mt-6">
     <template
       x-for="src in [
-        'galeri/gatau.webp',
+        'galeri/senja matahari.webp',
         'galeri/gatau2.webp',
         'galeri/KampungNaga1.webp',
         'galeri/LabuanBajo.webp',
@@ -57,6 +57,7 @@
       <div class="aspect-square">
         <img
           :src="src"
+          :title="src.split('/').pop().replace('.webp', '')"
           @click="imgSrc = src; open = true"
           class="cursor-pointer w-full h-full object-cover rounded-lg hover:scale-105 transition-transform"
         />
