@@ -65,17 +65,34 @@ const { content } = Astro.props;
   const track = document.querySelector("#custom-carousel .carousel-track");
   const totalSlides = track.children.length;
 
+  function updateSlide() {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
   document.getElementById("prevSlide").addEventListener("click", () => {
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateSlide();
+    resetAutoSlide();
   });
 
   document.getElementById("nextSlide").addEventListener("click", () => {
     currentSlide = (currentSlide + 1) % totalSlides;
     updateSlide();
+    resetAutoSlide();
   });
 
-  function updateSlide() {
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  // Auto slide
+  let slideInterval = setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlide();
+  }, 5000); // 5 detik
+
+  // Reset auto slide jika user klik tombol
+  function resetAutoSlide() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    }, 5000);
   }
 </script>
