@@ -5,48 +5,72 @@
             "judul": "BELITUNG",
             "isi": "Bangka Belitung",
             "ctaText": "Now",
-            "bg": "foto-hero/1.webp"
+            "bg": "foto-hero/belitung.webp"
         },
         {
             "subjudul": "Let's Explore",
             "ctaText": "Now",
-            "bg": "foto-hero/3.webp",
-            "judul": "UBUD",
+            "bg": "foto-hero/bali.webp",
+            "judul": "BALI",
             "isi": "Bali"
         },
         {
             "subjudul": "Reunion in",
             "ctaText": "Now",
-            "bg": "foto-hero/5.webp",
-            "judul": "HANOI",
+            "bg": "foto-hero/vietnam.webp",
+            "judul": "VIETNAM",
             "isi": "Vietnam"
         },
         {
             "subjudul": "Trekking in",
             "judul": "TASIKMALAYA",
             "ctaText": "Now",
-            "bg": "foto-hero/11.webp"
+            "bg": "foto-hero/tasikmalaya.webp"
         },
         {
             "subjudul": "Gathering In",
             "judul": "LOMBOK",
             "isi": "Nusa Tenggara Barat",
             "ctaText": "Now",
-            "bg": "foto-hero/8.webp"
+            "bg": "foto-hero/lombok.webp"
         },
         {
             "subjudul": "Discover",
             "judul": "North Sumatra",
-            "isi": "Garut",
             "ctaText": "Now",
-            "bg": "foto-hero/10.webp"
+            "bg": "foto-hero/sumatra utara.webp"
         },
         {
             "subjudul": "Discover",
             "judul": "BROMO",
             "isi": "Jawa Timur",
             "ctaText": "Now",
-            "bg": "foto-hero/9.webp"
+            "bg": "foto-hero/bromo.webp"
+        },
+        {
+            "subjudul": "Historical Trip",
+            "judul": "CAMBODIA",
+            "isi": "Cambodia",
+            "ctaText": "Now",
+            "bg": "foto-hero/cambodia.webp"
+        },
+        {
+            "subjudul": "Discover",
+            "judul": "KINABALU",
+            "isi": "Sabah",
+            "ctaText": "Now",
+            "bg": "foto-hero/kinabalu.webp"
+        },
+        {
+            "subjudul": "Strolling Arround",
+            "judul": "SINGAPORE",
+            "ctaText": "Now",
+            "bg": "foto-hero/singapore.webp"
+        },
+        {
+            "judul": "OTHERS",
+            "ctaText": "Now",
+            "bg": "foto-hero/others.webp"
         }
     ],
     "navbar": {
@@ -77,18 +101,18 @@
         "judul": "Best Seller Trip"
     },
     "listtrip": {
-        "list1": "Trip to Labuan Bajo",
-        "deskripsi1": "Explore the beauty of Labuan Bajo, East Nusa Tenggara",
+        "list1": "Trip to Vietnam",
+        "deskripsi1": "Celebrate togetherness in Vietnam, a land full of colors and stories",
         "list2": "Trip to Bromo",
-        "deskripsi2": "Breathe the fresh air in Bromo, East Java",
+        "deskripsi2": "Breathe in the fresh air and embrace the natural beauty of Bromo, the jewel of East Java",
         "list3": "Trip to Pangandaran",
-        "deskripsi3": "Enjoy the beauty of Pangandaran, West Java",
-        "list4": "Trip to Garut",
-        "deskripsi4": "Trip to Garut",
-        "list5": "Trip to Bangka Belitung",
-        "deskripsi5": "Trip to Bangka Belitung",
-        "list6": "Trip to Jawa Timur",
-        "deskripsi6": "Trip to Jawa Timur",
+        "deskripsi3": "Enjoy the beauty of the beach and the thrill of adventure in Pangandaran, the gem of West Java",
+        "list4": "Trip to Belitung",
+        "deskripsi4": "Feel the ocean breeze and soft white sands in Belitung, Indonesia’s tropical paradise",
+        "list5": "Trip to Bali",
+        "deskripsi5": "Soak up the sun and embrace the magic of Bali’s stunning beaches",
+        "list6": "Trip to Malang",
+        "deskripsi6": "Feel the cool breeze and natural beauty of Malang, the city of a thousand charms",
         "cta": "Preview"
     },
     "footer": {

@@ -56,7 +56,7 @@ const { content } = Astro.props;
           @mouseleave="hover = false"
         >
           <img
-            src="trip/LabuanBajo.webp"
+            src="trip/vietnam.webp"
             alt="Gallery image 1"
             class="w-full h-105 object-cover object-[center_20%]"
           />
@@ -71,7 +71,7 @@ const { content } = Astro.props;
             </p>
             <br />
             <a
-              href="https://youtu.be/kTp_RNLU8Dg"
+              href="https://youtu.be/v2hLQMgNBwo"
               target="_blank"
               rel="noopener noreferrer"
               class="preview-link font-semibold text-xl">{content.cta}</a
@@ -149,9 +149,9 @@ const { content } = Astro.props;
           @mouseleave="hover = false"
         >
           <img
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+            src="trip/belitung.webp"
             alt="Gallery image 4"
-            class="w-full h-105 object-cover"
+            class="w-full h-105 object-cover object-[center_20%]"
           />
           <div
             class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
@@ -162,20 +162,26 @@ const { content } = Astro.props;
             <p class="text-sm">
               {content.deskripsi4}
             </p>
+            <br />
+            <a
+              href="https://youtu.be/j9LPlBnXvj4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="preview-link font-semibold text-xl">{content.cta}</a
+            >
           </div>
         </div>
-
         <!-- Gallery Item 5 -->
         <div
-          class="flex-none mr-1 w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
+          class="flex-none w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
           x-data="{ hover: false }"
           @mouseenter="hover = true"
           @mouseleave="hover = false"
         >
           <img
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+            src="trip/bali.webp"
             alt="Gallery image 5"
-            class="w-full h-105 object-cover"
+            class="w-full h-105 object-cover object-[center_20%]"
           />
           <div
             class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
@@ -186,116 +192,153 @@ const { content } = Astro.props;
             <p class="text-sm">
               {content.deskripsi5}
             </p>
+            <br />
+            <a
+              href="https://youtu.be/C9Dcx5aRdnw"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="preview-link font-semibold text-xl">{content.cta}</a
+            >
+          </div>
+        </div>
+        <!-- Gallery Item 6 -->
+        <div
+          class="flex-none mr-1 w-[417px] relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-103"
+          x-data="{ hover: false }"
+          @mouseenter="hover = true"
+          @mouseleave="hover = false"
+        >
+          <img
+            src="trip/malang.webp"
+            alt="Gallery image 6"
+            class="w-full h-105 object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4"
+            x-show="hover"
+            x-transition
+          >
+            <h2 class="text-2xl font-bold mb-2">{content.list6}</h2>
+            <p class="text-sm">
+              {content.deskripsi6}
+            </p>
+            <br />
+            <a
+              href="https://youtu.be/utR1YX4766s"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="preview-link font-semibold text-xl">{content.cta}</a
+            >
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<style>
-  /* Hide scrollbar but maintain functionality */
-  .scrollbar-hide {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
-
-  /* Add smooth transition for navigation buttons */
-  #prev,
-  #next {
-    transition:
-      opacity 0.3s ease,
-      background-color 0.2s ease;
-  }
-
-  .pointer-events-none {
-    pointer-events: none;
-  }
-
-  /* Style for the Preview text link */
-  .preview-link {
-    color: white;
-    font-size: 0.95rem;
-    cursor: pointer;
-    position: relative;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    display: inline-block;
-  }
-
-  /* Underline effect on hover */
-  .preview-link::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: -2px;
-    left: 0;
-    background-color: white;
-    transition: width 0.3s ease;
-  }
-
-  .preview-link:hover::after {
-    width: 100%;
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const gallery = document.getElementById("gallery");
-    const wrapper = document.getElementById("gallery-wrapper");
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-
-    // Scroll amount (width of one item + gap)
-    const scrollAmount = 417 + 12; // 417px width + 12px gap (space-x-3)
-
-    // Initially check if buttons should be visible
-    checkButtonVisibility();
-
-    // Function to check and update button visibility
-    function checkButtonVisibility() {
-      // Hide prev button if at the start
-      if (wrapper?.scrollLeft <= 10) {
-        prevBtn?.classList.add("opacity-0", "pointer-events-none");
-      } else {
-        prevBtn?.classList.remove("opacity-0", "pointer-events-none");
-      }
-
-      // Hide next button if at the end
-      const maxScrollLeft = wrapper?.scrollWidth - wrapper?.clientWidth - 10;
-      if (wrapper?.scrollLeft >= maxScrollLeft) {
-        nextBtn?.classList.add("opacity-0", "pointer-events-none");
-      } else {
-        nextBtn?.classList.remove("opacity-0", "pointer-events-none");
-      }
+  <style>
+    /* Hide scrollbar but maintain functionality */
+    .scrollbar-hide {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
     }
 
-    // Listen for scroll events to update button visibility
-    wrapper?.addEventListener("scroll", checkButtonVisibility);
+    /* Add smooth transition for navigation buttons */
+    #prev,
+    #next {
+      transition:
+        opacity 0.3s ease,
+        background-color 0.2s ease;
+    }
 
-    // Event listeners for navigation buttons
-    nextBtn?.addEventListener("click", function () {
-      wrapper?.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
+    .pointer-events-none {
+      pointer-events: none;
+    }
 
-    prevBtn?.addEventListener("click", function () {
-      wrapper?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    });
+    /* Style for the Preview text link */
+    .preview-link {
+      color: white;
+      font-size: 0.95rem;
+      cursor: pointer;
+      position: relative;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      display: inline-block;
+    }
 
-    // Optional: Window resize event to recheck button visibility
-    window.addEventListener("resize", checkButtonVisibility);
+    /* Underline effect on hover */
+    .preview-link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: white;
+      transition: width 0.3s ease;
+    }
 
-    // Optional: Keyboard navigation support
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight") {
-        wrapper?.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      } else if (e.key === "ArrowLeft") {
-        wrapper?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    .preview-link:hover::after {
+      width: 100%;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const gallery = document.getElementById("gallery");
+      const wrapper = document.getElementById("gallery-wrapper");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+
+      // Scroll amount (width of one item + gap)
+      const scrollAmount = 417 + 12; // 417px width + 12px gap (space-x-3)
+
+      // Initially check if buttons should be visible
+      checkButtonVisibility();
+
+      // Function to check and update button visibility
+      function checkButtonVisibility() {
+        // Hide prev button if at the start
+        if (wrapper?.scrollLeft <= 10) {
+          prevBtn?.classList.add("opacity-0", "pointer-events-none");
+        } else {
+          prevBtn?.classList.remove("opacity-0", "pointer-events-none");
+        }
+
+        // Hide next button if at the end
+        const maxScrollLeft = wrapper?.scrollWidth - wrapper?.clientWidth - 10;
+        if (wrapper?.scrollLeft >= maxScrollLeft) {
+          nextBtn?.classList.add("opacity-0", "pointer-events-none");
+        } else {
+          nextBtn?.classList.remove("opacity-0", "pointer-events-none");
+        }
       }
+
+      // Listen for scroll events to update button visibility
+      wrapper?.addEventListener("scroll", checkButtonVisibility);
+
+      // Event listeners for navigation buttons
+      nextBtn?.addEventListener("click", function () {
+        wrapper?.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+
+      prevBtn?.addEventListener("click", function () {
+        wrapper?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+
+      // Optional: Window resize event to recheck button visibility
+      window.addEventListener("resize", checkButtonVisibility);
+
+      // Optional: Keyboard navigation support
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") {
+          wrapper?.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        } else if (e.key === "ArrowLeft") {
+          wrapper?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        }
+      });
     });
-  });
-</script>
+  </script>
+</div>
