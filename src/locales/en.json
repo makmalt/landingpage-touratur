@@ -1,78 +1,81 @@
 {
-    "hero": [
-        {
-            "subjudul": "Let's Explore",
-            "judul": "BELITUNG",
-            "isi": "Bangka Belitung",
-            "ctaText": "Now",
-            "bg": "foto-hero/belitung.webp"
-        },
-        {
-            "subjudul": "Let's Explore",
-            "ctaText": "Now",
-            "bg": "foto-hero/bali.webp",
-            "judul": "BALI",
-            "isi": "Bali"
-        },
-        {
-            "subjudul": "Reunion in",
-            "ctaText": "Now",
-            "bg": "foto-hero/vietnam.webp",
-            "judul": "VIETNAM",
-            "isi": "Vietnam"
-        },
-        {
-            "subjudul": "Trekking in",
-            "judul": "TASIKMALAYA",
-            "ctaText": "Now",
-            "bg": "foto-hero/tasikmalaya.webp"
-        },
-        {
-            "subjudul": "Gathering In",
-            "judul": "LOMBOK",
-            "isi": "Nusa Tenggara Barat",
-            "ctaText": "Now",
-            "bg": "foto-hero/lombok.webp"
-        },
-        {
-            "subjudul": "Discover",
-            "judul": "North Sumatra",
-            "ctaText": "Now",
-            "bg": "foto-hero/sumatra utara.webp"
-        },
-        {
-            "subjudul": "Discover",
-            "judul": "BROMO",
-            "isi": "Jawa Timur",
-            "ctaText": "Now",
-            "bg": "foto-hero/bromo.webp"
-        },
-        {
-            "subjudul": "Historical Trip",
-            "judul": "CAMBODIA",
-            "isi": "Cambodia",
-            "ctaText": "Now",
-            "bg": "foto-hero/cambodia.webp"
-        },
-        {
-            "subjudul": "Discover",
-            "judul": "KINABALU",
-            "isi": "Sabah",
-            "ctaText": "Now",
-            "bg": "foto-hero/kinabalu.webp"
-        },
-        {
-            "subjudul": "Strolling Arround",
-            "judul": "SINGAPORE",
-            "ctaText": "Now",
-            "bg": "foto-hero/singapore.webp"
-        },
-        {
-            "judul": "OTHERS",
-            "ctaText": "Now",
-            "bg": "foto-hero/others.webp"
-        }
-    ],
+    "hero": {
+        "waLink": "https://wa.me/6289509305515?text=Hello%20I%20want%20to%20order%20now",
+        "slides": [
+            {
+                "subjudul": "Let's Explore",
+                "judul": "BELITUNG",
+                "isi": "Bangka Belitung",
+                "ctaText": "Now",
+                "bg": "foto-hero/belitung.webp"
+            },
+            {
+                "subjudul": "Let's Explore",
+                "ctaText": "Now",
+                "bg": "foto-hero/bali.webp",
+                "judul": "BALI",
+                "isi": "Bali"
+            },
+            {
+                "subjudul": "Reunion in",
+                "ctaText": "Now",
+                "bg": "foto-hero/vietnam.webp",
+                "judul": "VIETNAM",
+                "isi": "Vietnam"
+            },
+            {
+                "subjudul": "Trekking in",
+                "judul": "TASIKMALAYA",
+                "ctaText": "Now",
+                "bg": "foto-hero/tasikmalaya.webp"
+            },
+            {
+                "subjudul": "Gathering In",
+                "judul": "LOMBOK",
+                "isi": "Nusa Tenggara Barat",
+                "ctaText": "Now",
+                "bg": "foto-hero/lombok.webp"
+            },
+            {
+                "subjudul": "Discover",
+                "judul": "North Sumatra",
+                "ctaText": "Now",
+                "bg": "foto-hero/sumatra utara.webp"
+            },
+            {
+                "subjudul": "Discover",
+                "judul": "BROMO",
+                "isi": "Jawa Timur",
+                "ctaText": "Now",
+                "bg": "foto-hero/bromo.webp"
+            },
+            {
+                "subjudul": "Historical Trip",
+                "judul": "CAMBODIA",
+                "isi": "Cambodia",
+                "ctaText": "Now",
+                "bg": "foto-hero/cambodia.webp"
+            },
+            {
+                "subjudul": "Discover",
+                "judul": "KINABALU",
+                "isi": "Sabah",
+                "ctaText": "Now",
+                "bg": "foto-hero/kinabalu.webp"
+            },
+            {
+                "subjudul": "Strolling Arround",
+                "judul": "SINGAPORE",
+                "ctaText": "Now",
+                "bg": "foto-hero/singapore.webp"
+            },
+            {
+                "judul": "OTHERS",
+                "ctaText": "Now",
+                "bg": "foto-hero/others.webp"
+            }
+        ]
+    },
     "navbar": {
         "home": "Home",
         "trip": "Trip",
@@ -117,5 +120,9 @@
     },
     "footer": {
         "social": "Find us on social media"
+    },
+    "floatingCTA": {
+        "text": "Hi, can I help you?",
+        "waLink": "https://wa.me/6289509305515?text=Hello%20I%20want%20to%20order%20now"
     }
 }

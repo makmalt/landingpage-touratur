@@ -1,78 +1,81 @@
 {
-    "hero": [
-        {
-            "subjudul": "Let's Explore",
-            "judul": "BELITUNG",
-            "isi": "Bangka Belitung",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/belitung.webp"
-        },
-        {
-            "subjudul": "Let's Explore",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/bali.webp",
-            "judul": "BALI",
-            "isi": "Bali"
-        },
-        {
-            "subjudul": "Reunion in",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/vietnam.webp",
-            "judul": "VIETNAM",
-            "isi": "Vietnam"
-        },
-        {
-            "subjudul": "Trekking in",
-            "judul": "TASIKMALAYA",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/tasikmalaya.webp"
-        },
-        {
-            "subjudul": "Gathering In",
-            "judul": "LOMBOK",
-            "isi": "Nusa Tenggara Barat",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/lombok.webp"
-        },
-        {
-            "subjudul": "Discover",
-            "judul": "Sumatra Utara",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/sumatra utara.webp"
-        },
-        {
-            "subjudul": "Discover",
-            "judul": "BROMO",
-            "isi": "Jawa Timur",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/bromo.webp"
-        },
-        {
-            "subjudul": "Historical Trip",
-            "judul": "CAMBODIA",
-            "isi": "Cambodia",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/cambodia.webp"
-        },
-        {
-            "subjudul": "Discover",
-            "judul": "KINABALU",
-            "isi": "Sabah",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/kinabalu.webp"
-        },
-        {
-            "subjudul": "Strolling Arround",
-            "judul": "SINGAPORE",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/singapore.webp"
-        },
-        {
-            "judul": "OTHERS",
-            "ctaText": "Sekarang",
-            "bg": "foto-hero/others.webp"
-        }
-    ],
+    "hero": {
+        "waLink": "https://wa.me/6289509305515?text=Halo%20saya%20mau%20pesan%20sekarang",
+        "slides": [
+            {
+                "subjudul": "Let's Explore",
+                "judul": "BELITUNG",
+                "isi": "Bangka Belitung",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/belitung.webp"
+            },
+            {
+                "subjudul": "Let's Explore",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/bali.webp",
+                "judul": "BALI",
+                "isi": "Bali"
+            },
+            {
+                "subjudul": "Reunion in",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/vietnam.webp",
+                "judul": "VIETNAM",
+                "isi": "Vietnam"
+            },
+            {
+                "subjudul": "Trekking in",
+                "judul": "TASIKMALAYA",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/tasikmalaya.webp"
+            },
+            {
+                "subjudul": "Gathering In",
+                "judul": "LOMBOK",
+                "isi": "Nusa Tenggara Barat",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/lombok.webp"
+            },
+            {
+                "subjudul": "Discover",
+                "judul": "North Sumatra",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/sumatra utara.webp"
+            },
+            {
+                "subjudul": "Discover",
+                "judul": "BROMO",
+                "isi": "Jawa Timur",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/bromo.webp"
+            },
+            {
+                "subjudul": "Historical Trip",
+                "judul": "CAMBODIA",
+                "isi": "Cambodia",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/cambodia.webp"
+            },
+            {
+                "subjudul": "Discover",
+                "judul": "KINABALU",
+                "isi": "Sabah",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/kinabalu.webp"
+            },
+            {
+                "subjudul": "Strolling Arround",
+                "judul": "SINGAPORE",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/singapore.webp"
+            },
+            {
+                "judul": "OTHERS",
+                "ctaText": "Sekarang",
+                "bg": "foto-hero/others.webp"
+            }
+        ]
+    },
     "navbar": {
         "home": "Beranda",
         "trip": "Trip",
@@ -117,5 +120,9 @@
     },
     "footer": {
         "social": "Temukan kami di media sosial"
+    },
+    "floatingCTA": {
+        "text": "Halo, ada yang bisa dibantu?",
+        "waLink": "https://wa.me/6289509305515?text=Halo%20saya%20mau%20pesan%20sekarang"
     }
 }
