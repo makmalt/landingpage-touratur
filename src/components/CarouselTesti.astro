@@ -10,7 +10,7 @@ const { content } = Astro.props;
     <!-- Track / Slide Wrapper -->
     <div
       class="carousel-track flex transition-transform duration-700"
-      style="width: 500%;"
+      style="width: 600%;"
     >
       <!-- Slide 1 -->
       <div class="carousel-item w-full flex justify-center shrink-0">
@@ -97,9 +97,26 @@ const { content } = Astro.props;
           </p>
         </div>
       </div>
+
+      <!-- Clone Slide 1 for smooth looping -->
+      <div class="carousel-item w-full flex justify-center shrink-0">
+        <div class="w-3/5 h-100 md:h-64 flex items-center">
+          <img
+            src="/foto-testi/Prof Endang.webp"
+            alt="foto prof endang"
+            class="w-40 h-40 object-cover rounded-full mr-4"
+          />
+          <p class="text-left text-xl font-serif opacity-75">
+            “{content.isi1}”<br /><br />
+            <span class="text-lg">
+              <b>Prof Endang (Guru Besar Unpad & Dokter di RSHS)</b> | Vietnam Trip
+            </span>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <!-- Controls (DIPINDAH KE LUAR .carousel-track) -->
+    <!-- Controls -->
     <div
       class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10"
     >
@@ -113,37 +130,60 @@ const { content } = Astro.props;
   </div>
 </div>
 
+<!-- JS -->
 <script is:inline>
   let currentSlide = 0;
   const track = document.querySelector("#custom-carousel .carousel-track");
-  const totalSlides = track.children.length;
+  const slides = track.children;
+  const totalSlides = 5; // asli, exclude clone
 
-  function updateSlide() {
+  function updateSlide(animate = true) {
+    if (!animate) {
+      track.classList.remove("transition-transform", "duration-700");
+    } else {
+      track.classList.add("transition-transform", "duration-700");
+    }
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
 
-  document.getElementById("prevSlide").addEventListener("click", () => {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  function handleNext() {
+    currentSlide++;
     updateSlide();
+
+    if (currentSlide === totalSlides) {
+      setTimeout(() => {
+        currentSlide = 0;
+        updateSlide(false);
+      }, 700);
+    }
+  }
+
+  function handlePrev() {
+    if (currentSlide === 0) return;
+    currentSlide--;
+    updateSlide();
+  }
+
+  document.getElementById("nextSlide").addEventListener("click", () => {
+    handleNext();
     resetAutoSlide();
   });
 
-  document.getElementById("nextSlide").addEventListener("click", () => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlide();
+  document.getElementById("prevSlide").addEventListener("click", () => {
+    handlePrev();
     resetAutoSlide();
   });
 
   let slideInterval = setInterval(() => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlide();
+    handleNext();
   }, 5000);
 
   function resetAutoSlide() {
     clearInterval(slideInterval);
     slideInterval = setInterval(() => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlide();
+      handleNext();
     }, 5000);
   }
+
+  updateSlide();
 </script>
