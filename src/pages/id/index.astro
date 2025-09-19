@@ -12,11 +12,49 @@ import Footer from "../../components/Footer.astro";
 import Galeri from "../../components/Galeri.astro";
 import Grid from "../../components/Grid.astro";
 import About from "../../components/About.astro";
+
+// SEO Meta Tags for Indonesian page
+const seoData = {
+  title:
+    "Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali, Belitung, Vietnam",
+  description:
+    "Agen Tour Travel Tasikmalaya terpercaya dengan paket wisata murah ke Bali, Belitung, Vietnam, Bromo, Lombok. Pelayanan terbaik dengan harga terjangkau untuk wisatawan Tasikmalaya.",
+  keywords:
+    "tour travel tasikmalaya, agen travel tasikmalaya, paket wisata tasikmalaya, tour tasikmalaya, travel tasikmalaya, wisata tasikmalaya, tour murah tasikmalaya, paket tour tasikmalaya, wisata bali dari tasikmalaya, wisata belitung dari tasikmalaya",
+  canonical: "https://touratur.id/",
+};
 ---
 
 <Layout>
+  <!-- Additional SEO Meta Tags for Indonesian Page -->
+  <Fragment slot="head">
+    <title>{seoData.title}</title>
+    <meta name="description" content={seoData.description} />
+    <meta name="keywords" content={seoData.keywords} />
+    <link rel="canonical" href={seoData.canonical} />
+
+    <!-- Open Graph for Indonesian Page -->
+    <meta property="og:title" content={seoData.title} />
+    <meta property="og:description" content={seoData.description} />
+    <meta property="og:url" content={seoData.canonical} />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Card for Indonesian Page -->
+    <meta name="twitter:title" content={seoData.title} />
+    <meta name="twitter:description" content={seoData.description} />
+  </Fragment>
+
   <Navbar content={id.navbar} />
   <FloatingCTA content={id.floatingCTA} />
+
+  <!-- SEO H1 untuk halaman utama -->
+  <div class="sr-only">
+    <h1>
+      Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali,
+      Belitung, Vietnam, Bromo & Destinasi Populer
+    </h1>
+  </div>
+
   <section id="home"><HeroId /></section>
   <HeaderUnggul />
   <section id="trip" class="pt-10"></section>

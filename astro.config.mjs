@@ -7,9 +7,17 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://touratur.com',
+  compressHTML: true,
   vite: {
     plugins: [tailwindcss()]
   },
 
-  integrations: [react()]
+  integrations: [react()],
+  
+  // SEO Configuration
+  output: 'static',
+  build: {
+    inlineStylesheets: 'auto'
+  }
 });

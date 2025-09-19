@@ -1,4 +1,7 @@
 <div x-data="{ open: false, imgSrc: '' }" x-cloak>
+  <!-- SEO H2 untuk Galeri -->
+  <h2 class="sr-only">Galeri Foto Paket Wisata dari Agen Travel Tasikmalaya</h2>
+
   <!-- Modal -->
   <div
     x-show="open"
@@ -42,28 +45,30 @@
   <!-- Gallery -->
   <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-4 mt-6">
     <template
-      x-for="src in [
-        'galeri/Sunset Ride.webp',
-        'galeri/Sandy Escape.webp',
-        'galeri/Dragon Village Life.webp',
-        'galeri/Great Hill.webp',
-        'galeri/Tropical Serenity.webp',
-        'galeri/Swim with Turtles.webp',
-        'galeri/Lost in Blue.webp',
-        'galeri/Sunset Wander.webp',
-        'galeri/Harbor Escape.webp',
-        'galeri/Beautiful Peace Ship.webp',
-        'galeri/Chill Greenery.webp',
-        'galeri/Fresh Air.webp',
+      x-for="(item, index) in [
+        { src: 'galeri/Sunset Ride.webp', alt: 'Sunset Ride' },
+        { src: 'galeri/Sandy Escape.webp', alt: 'Sandy Escape' },
+        { src: 'galeri/Dragon Village Life.webp', alt: 'Dragon Village Life' },
+        { src: 'galeri/Great Hill.webp', alt: 'Great Hill' },
+        { src: 'galeri/Tropical Serenity.webp', alt: 'Tropical Serenity' },
+        { src: 'galeri/Swim with Turtles.webp', alt: 'Swim with Turtles' },
+        { src: 'galeri/Lost in Blue.webp', alt: 'Lost in Blue' },
+        { src: 'galeri/Sunset Wander.webp', alt: 'Sunset Wander' },
+        { src: 'galeri/Harbor Escape.webp', alt: 'Harbor Escape' },
+        { src: 'galeri/Beautiful Peace Ship.webp', alt: 'Beautiful' },
+        { src: 'galeri/Chill Greenery.webp', alt: 'Chill Greenery' },
+        { src: 'galeri/Fresh Air.webp', alt: 'Fresh Air' },
       ]"
-      :key="src"
+      :key="index"
     >
       <div class="aspect-square">
         <img
-          :src="src"
-          :title="src.split('/').pop().replace('.webp', '')"
-          @click="imgSrc = src; open = true"
+          :src="item.src"
+          :alt="item.alt"
+          :title="item.alt"
+          @click="imgSrc = item.src; open = true"
           class="cursor-pointer w-full h-full object-cover rounded-lg hover:scale-105 transition-transform"
+          loading="lazy"
         />
       </div>
     </template>

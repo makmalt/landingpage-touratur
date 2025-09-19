@@ -1,0 +1,176 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const seoData = {
+  title:
+    "Paket Wisata Bali dari Agen Travel Tasikmalaya - Harga Murah & Terpercaya",
+  description:
+    "Paket wisata Bali murah dari agen travel Tasikmalaya. Nikmati keindahan pantai, budaya, dan kuliner Bali dengan harga terjangkau. Pelayanan terbaik untuk wisatawan Tasikmalaya.",
+  keywords:
+    "paket wisata bali dari tasikmalaya, tour bali tasikmalaya, travel bali tasikmalaya, wisata bali murah tasikmalaya, agen travel bali tasikmalaya",
+  canonical: "https://touratur.com/id/paket-wisata-bali",
+};
+---
+
+<Layout>
+  <Fragment slot="head">
+    <title>{seoData.title}</title>
+    <meta name="description" content={seoData.description} />
+    <meta name="keywords" content={seoData.keywords} />
+    <link rel="canonical" href={seoData.canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={seoData.title} />
+    <meta property="og:description" content={seoData.description} />
+    <meta property="og:url" content={seoData.canonical} />
+    <meta property="og:image" content="/foto-hero/bali.webp" />
+
+    <!-- Structured Data for Bali Tour -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": "Paket Wisata Bali dari Agen Travel Tasikmalaya",
+        "description": "Paket wisata Bali murah dari agen travel Tasikmalaya dengan destinasi populer seperti Kuta, Ubud, Tanah Lot, dan Uluwatu",
+        "provider": {
+          "@type": "TravelAgency",
+          "name": "Touratur - Agen Travel Tasikmalaya",
+          "url": "https://touratur.com"
+        },
+        "touristType": "Leisure",
+        "itinerary": [
+          "Kuta Beach",
+          "Ubud Monkey Forest",
+          "Tanah Lot Temple",
+          "Uluwatu Temple",
+          "Tegallalang Rice Terrace"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "Mulai dari Rp 1.500.000",
+          "priceCurrency": "IDR",
+          "availability": "InStock"
+        }
+      }
+    </script>
+  </Fragment>
+
+  <div class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Paket Wisata Bali dari Agen Travel Tasikmalaya
+        </h1>
+        <p class="text-xl md:text-2xl mb-8">
+          Nikmati keindahan pulau dewata dengan harga terjangkau
+        </p>
+        <a
+          href="https://wa.me/6289509305515?text=Halo%20saya%20mau%20pesan%20paket%20wisata%20Bali"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
+        >
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">
+            Mengapa Memilih Paket Wisata Bali dari Agen Travel Tasikmalaya?
+          </h2>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span
+                >Harga paket wisata Bali yang terjangkau untuk wisatawan
+                Tasikmalaya</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Transportasi nyaman dari Tasikmalaya ke Bali</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span
+                >Destinasi wisata Bali terlengkap: Kuta, Ubud, Tanah Lot,
+                Uluwatu</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Akomodasi hotel bintang 3-4 di Bali</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Guide profesional berbahasa Indonesia</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Makan 3x sehari selama tour Bali</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="/foto-hero/bali.webp"
+            alt="Paket Wisata Bali dari Agen Travel Tasikmalaya"
+            class="rounded-lg shadow-lg w-full"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Destinasi Populer -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Destinasi Wisata Bali yang Akan Dikunjungi
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Kuta Beach</h3>
+            <p class="text-gray-600">
+              Pantai populer dengan ombak yang cocok untuk surfing dan sunset
+              yang memukau
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">
+              Ubud Monkey Forest
+            </h3>
+            <p class="text-gray-600">
+              Hutan suci dengan ratusan monyet dan kuil Hindu yang indah
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">
+              Tanah Lot Temple
+            </h3>
+            <p class="text-gray-600">
+              Pura di atas batu karang dengan pemandangan sunset yang
+              spektakuler
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="mt-16 bg-blue-600 text-white p-8 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">Siap Berlibur ke Bali?</h2>
+        <p class="text-lg mb-6">
+          Hubungi agen travel Tasikmalaya kami sekarang untuk mendapatkan paket
+          wisata Bali terbaik
+        </p>
+        <a
+          href="https://wa.me/6289509305515?text=Halo%20saya%20mau%20pesan%20paket%20wisata%20Bali"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors inline-block"
+        >
+          WhatsApp Sekarang
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

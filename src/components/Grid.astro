@@ -65,7 +65,7 @@ const { content } = Astro.props;
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">{content.list1}</h2>
+            <h3 class="text-2xl font-bold mb-2">{content.list1}</h3>
             <p class="text-sm">
               {content.deskripsi1}
             </p>
@@ -96,7 +96,7 @@ const { content } = Astro.props;
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">{content.list2}</h2>
+            <h3 class="text-2xl font-bold mb-2">{content.list2}</h3>
             <p class="text-sm">
               {content.deskripsi2}
             </p>
@@ -127,7 +127,7 @@ const { content } = Astro.props;
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">{content.list3}</h2>
+            <h3 class="text-2xl font-bold mb-2">{content.list3}</h3>
             <p class="text-sm">
               {content.deskripsi3}
             </p>
@@ -158,7 +158,7 @@ const { content } = Astro.props;
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">{content.list4}</h2>
+            <h3 class="text-2xl font-bold mb-2">{content.list4}</h3>
             <p class="text-sm">
               {content.deskripsi4}
             </p>
@@ -188,7 +188,7 @@ const { content } = Astro.props;
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">{content.list5}</h2>
+            <h3 class="text-2xl font-bold mb-2">{content.list5}</h3>
             <p class="text-sm">
               {content.deskripsi5}
             </p>
@@ -218,7 +218,7 @@ const { content } = Astro.props;
             x-show="hover"
             x-transition
           >
-            <h2 class="text-2xl font-bold mb-2">{content.list6}</h2>
+            <h3 class="text-2xl font-bold mb-2">{content.list6}</h3>
             <p class="text-sm">
               {content.deskripsi6}
             </p>
@@ -301,15 +301,17 @@ const { content } = Astro.props;
       // Function to check and update button visibility
       function checkButtonVisibility() {
         // Hide prev button if at the start
-        if (wrapper?.scrollLeft <= 10) {
+        if (wrapper && wrapper.scrollLeft <= 10) {
           prevBtn?.classList.add("opacity-0", "pointer-events-none");
         } else {
           prevBtn?.classList.remove("opacity-0", "pointer-events-none");
         }
 
         // Hide next button if at the end
-        const maxScrollLeft = wrapper?.scrollWidth - wrapper?.clientWidth - 10;
-        if (wrapper?.scrollLeft >= maxScrollLeft) {
+        const maxScrollLeft = wrapper
+          ? wrapper.scrollWidth - wrapper.clientWidth - 10
+          : 0;
+        if (wrapper && wrapper.scrollLeft >= maxScrollLeft) {
           nextBtn?.classList.add("opacity-0", "pointer-events-none");
         } else {
           nextBtn?.classList.remove("opacity-0", "pointer-events-none");

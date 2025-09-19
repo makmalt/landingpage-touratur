@@ -1,0 +1,177 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const seoData = {
+  title:
+    "Paket Wisata Belitung dari Agen Travel Tasikmalaya - Harga Murah & Terpercaya",
+  description:
+    "Paket wisata Belitung murah dari agen travel Tasikmalaya. Nikmati keindahan pantai pasir putih, batu granit, dan kuliner khas Belitung dengan harga terjangkau.",
+  keywords:
+    "paket wisata belitung dari tasikmalaya, tour belitung tasikmalaya, travel belitung tasikmalaya, wisata belitung murah tasikmalaya, agen travel belitung tasikmalaya",
+  canonical: "https://touratur.com/id/paket-wisata-belitung",
+};
+---
+
+<Layout>
+  <Fragment slot="head">
+    <title>{seoData.title}</title>
+    <meta name="description" content={seoData.description} />
+    <meta name="keywords" content={seoData.keywords} />
+    <link rel="canonical" href={seoData.canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={seoData.title} />
+    <meta property="og:description" content={seoData.description} />
+    <meta property="og:url" content={seoData.canonical} />
+    <meta property="og:image" content="/foto-hero/belitung.webp" />
+
+    <!-- Structured Data for Belitung Tour -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": "Paket Wisata Belitung dari Agen Travel Tasikmalaya",
+        "description": "Paket wisata Belitung murah dari agen travel Tasikmalaya dengan destinasi populer seperti Pantai Tanjung Tinggi, Pulau Lengkuas, dan Museum Kata Andrea Hirata",
+        "provider": {
+          "@type": "TravelAgency",
+          "name": "Touratur - Agen Travel Tasikmalaya",
+          "url": "https://touratur.com"
+        },
+        "touristType": "Leisure",
+        "itinerary": [
+          "Pantai Tanjung Tinggi",
+          "Pulau Lengkuas",
+          "Museum Kata Andrea Hirata",
+          "Pantai Tanjung Kelayang",
+          "Pulau Burung"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "Mulai dari Rp 1.200.000",
+          "priceCurrency": "IDR",
+          "availability": "InStock"
+        }
+      }
+    </script>
+  </Fragment>
+
+  <div class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Paket Wisata Belitung dari Agen Travel Tasikmalaya
+        </h1>
+        <p class="text-xl md:text-2xl mb-8">
+          Nikmati keindahan pulau laskar pelangi dengan harga terjangkau
+        </p>
+        <a
+          href="https://wa.me/6289509305515?text=Halo%20saya%20mau%20pesan%20paket%20wisata%20Belitung"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
+        >
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">
+            Mengapa Memilih Paket Wisata Belitung dari Agen Travel Tasikmalaya?
+          </h2>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span
+                >Harga paket wisata Belitung yang terjangkau untuk wisatawan
+                Tasikmalaya</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Transportasi nyaman dari Tasikmalaya ke Belitung</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span
+                >Destinasi wisata Belitung terlengkap: Pantai Tanjung Tinggi,
+                Pulau Lengkuas</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Akomodasi hotel bintang 3-4 di Belitung</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Guide profesional berbahasa Indonesia</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3">✓</span>
+              <span>Makan 3x sehari selama tour Belitung</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="/foto-hero/belitung.webp"
+            alt="Paket Wisata Belitung dari Agen Travel Tasikmalaya"
+            class="rounded-lg shadow-lg w-full"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Destinasi Populer -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Destinasi Wisata Belitung yang Akan Dikunjungi
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">
+              Pantai Tanjung Tinggi
+            </h3>
+            <p class="text-gray-600">
+              Pantai dengan batu granit besar yang menjadi ikon Belitung dan
+              lokasi syuting Laskar Pelangi
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Pulau Lengkuas</h3>
+            <p class="text-gray-600">
+              Pulau kecil dengan mercusuar bersejarah dan pantai pasir putih
+              yang memukau
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">
+              Museum Kata Andrea Hirata
+            </h3>
+            <p class="text-gray-600">
+              Museum yang didedikasikan untuk penulis novel Laskar Pelangi
+              dengan koleksi menarik
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="mt-16 bg-green-600 text-white p-8 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">Siap Berlibur ke Belitung?</h2>
+        <p class="text-lg mb-6">
+          Hubungi agen travel Tasikmalaya kami sekarang untuk mendapatkan paket
+          wisata Belitung terbaik
+        </p>
+        <a
+          href="https://wa.me/6289509305515?text=Halo%20saya%20mau%20pesan%20paket%20wisata%20Belitung"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors inline-block"
+        >
+          WhatsApp Sekarang
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

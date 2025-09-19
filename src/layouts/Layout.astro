@@ -5,15 +5,61 @@ import Analytics from "@vercel/analytics/astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Touratur - Agen Travel Wisata Terpercaya"
+      content="Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali, Belitung, Vietnam, Bromo & Destinasi Populer. Pelayanan Terbaik dengan Harga Terjangkau."
     />
-    <link rel="icon" type="image/svg+xml" href="/logoputih.png" />
+    <meta
+      name="keywords"
+      content="tour travel tasikmalaya, agen travel tasikmalaya, paket wisata tasikmalaya, tour tasikmalaya, travel tasikmalaya, wisata tasikmalaya, tour murah tasikmalaya, paket tour tasikmalaya"
+    />
+    <meta name="author" content="Touratur - Agen Travel Tasikmalaya" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Agen Tour Travel Tasikmalaya Terpercaya - Touratur"
+    />
+    <meta
+      property="og:description"
+      content="Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali, Belitung, Vietnam, Bromo & Destinasi Populer. Pelayanan Terbaik dengan Harga Terjangkau."
+    />
+    <meta property="og:url" content="https://touratur.com" />
+    <meta
+      property="og:site_name"
+      content="Touratur - Agen Travel Tasikmalaya"
+    />
+    <meta property="og:image" content="/logotulisan.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Agen Tour Travel Tasikmalaya Terpercaya - Touratur"
+    />
+    <meta
+      name="twitter:description"
+      content="Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali, Belitung, Vietnam, Bromo & Destinasi Populer."
+    />
+    <meta name="twitter:image" content="/logotulisan.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://touratur.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logoputih.png" />
+    <link rel="apple-touch-icon" href="/logoputih.png" />
+
     <meta name="generator" content={Astro.generator} />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
@@ -35,6 +81,70 @@ import Analytics from "@vercel/analytics/astro";
     <title>Touratur</title>
   </head>
   <body>
+    <!-- Structured Data for Travel Agency -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Touratur - Agen Travel Tasikmalaya",
+        "description": "Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali, Belitung, Vietnam, Bromo & Destinasi Populer",
+        "url": "https://touratur.id",
+        "logo": "https://touratur.com/logotulisan.png",
+        "image": "https://touratur.com/logotulisan.png",
+        "telephone": "+6289509305515",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tasikmalaya",
+          "addressRegion": "Jawa Barat",
+          "addressCountry": "Indonesia"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Indonesia"
+        },
+        "serviceType": "Travel Agency",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Paket Wisata",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paket Wisata Bali",
+                "description": "Nikmati hangatnya matahari dan keindahan pantai Bali yang memukau"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paket Wisata Belitung",
+                "description": "Nikmati hembusan angin laut dan pasir putih di Belitung, surga tropis Indonesia"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paket Wisata Vietnam",
+                "description": "Hangatkan momen kebersamaan di Vietnam, negeri penuh warna dan cerita"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paket Wisata Bromo",
+                "description": "Hirup udara segar dan nikmati keindahan alam di Bromo, permata Jawa Timur"
+              }
+            }
+          ]
+        },
+        "sameAs": ["https://wa.me/6289509305515"]
+      }
+    </script>
+
     <slot />
     <Analytics />
     <!-- Scroll To Top Button -->
