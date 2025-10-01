@@ -17,7 +17,7 @@
     <loc>https://touratur.id/id/</loc>
     <lastmod>2025-04-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   
   <!-- English Version -->
@@ -25,30 +25,6 @@
     <loc>https://touratur.id/en/</loc>
     <lastmod>2025-04-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Trip Pages -->
-  <url>
-    <loc>https://touratur.id/id/#trip</loc>
-    <lastmod>2025-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Gallery Page -->
-  <url>
-    <loc>https://touratur.id/id/#galeri</loc>
-    <lastmod>2025-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- About Section -->
-  <url>
-    <loc>https://touratur.id/id/#home</loc>
-    <lastmod>2025-04-30</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
