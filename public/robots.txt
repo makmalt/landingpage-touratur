@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://touratur.com/sitemap.xml
+Sitemap: https://touratur.id/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
