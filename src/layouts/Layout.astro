@@ -36,7 +36,7 @@ import Analytics from "@vercel/analytics/astro";
       property="og:site_name"
       content="Touratur - Agen Travel Tasikmalaya"
     />
-    <meta property="og:image" content="/logotulisan.png" />
+    <meta property="og:image" content="/favicon.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="id_ID" />
@@ -51,14 +51,14 @@ import Analytics from "@vercel/analytics/astro";
       name="twitter:description"
       content="Agen Tour Travel Tasikmalaya Terpercaya - Paket Wisata Murah ke Bali, Belitung, Vietnam, Bromo & Destinasi Populer."
     />
-    <meta name="twitter:image" content="/logotulisan.png" />
+    <meta name="twitter:image" content="/favicon.jpg" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://touratur.id" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/logoputih.png" />
-    <link rel="apple-touch-icon" href="/logoputih.png" />
+    <link rel="apple-touch-icon" href="/favicon.jpg" />
 
     <meta name="generator" content={Astro.generator} />
     <link
@@ -78,9 +78,7 @@ import Analytics from "@vercel/analytics/astro";
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Touratur</title>
-  </head>
-  <body>
+    <link rel="apple-touch-icon" href="/favicon.jpg" />
     <!-- Structured Data for Travel Agency -->
     <script type="application/ld+json">
       {
@@ -144,7 +142,9 @@ import Analytics from "@vercel/analytics/astro";
         "sameAs": ["https://wa.me/6289509305515"]
       }
     </script>
-
+    <title>Touratur</title>
+  </head>
+  <body>
     <slot />
     <Analytics />
     <!-- Scroll To Top Button -->
